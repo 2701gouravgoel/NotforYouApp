@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/login"
+    >
+
+    <EditText
+        android:id="@+id/login_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:hint="name....."
+        android:inputType="text"
+        android:padding="4dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_user_name"
+        android:layout_alignParentStart="true"
+        android:hint="Password....."
+        android:inputType="textPassword"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/login_password"
+        android:id="@+id/login_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="406dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/Already_have_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_Button"
+        android:layout_alignParentStart="true"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ff0000"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:text="Already have a UserName"
+        />
+
+
+</RelativeLayout>

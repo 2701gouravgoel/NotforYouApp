@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+
+        >
+
+    </ImageView>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:text="Please check the rules before try"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="italic"
+
+        />
+
+    <TextView
+        android:id="@+id/Rules"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="100dp"
+        android:text="  Rules"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:drawableStart="@drawable/rule"
+        android:background="@drawable/border1"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Play_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Rules"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="  Play Online"
+        android:textStyle="italic"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:drawableStart="@drawable/global"
+        android:background="@drawable/border1"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Play_friends_button"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Play_button"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:text="  Play with friends"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:drawableStart="@drawable/ic_group_black_24dp"
+        android:background="@drawable/border1"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/ChatRoom"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Play_friends_button"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:text="  Chat Room"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/ic_chat_black_24dp"
+        android:background="@drawable/border1"
+        >
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dev_info"
+        android:layout_marginBottom="40dp"
+        android:text="Presenting you the ever new game"
+        android:textColor="#ff0000"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/dev_info"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/dev1"
+        android:text="By:"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dev1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/dev2"
+        android:text="Gourav Goel"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dev2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:text="Mukul Dhiman"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
